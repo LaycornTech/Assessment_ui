@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Questions</title>
+    <script src="/src/scripts/script.js"></script>
+    <!-- add a link to axioss.js -->
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <style>
+      body {
+        padding-right: 2rem;
+        padding-left: 2rem;
+      }
+      .question-header {
+        font-size: 1.6rem;
+        font-weight: 600;
+        width: 96vw;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .question-body {
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.4;
+        margin-top: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- question-header -->
+    <div class="question-header">
+      <div>
+        Question <span id="questionNumber"></span> of
+        <span id="questionTotal"></span>
+      </div>
+      <div>
+        <span id="timer">1:00</span>
+      </div>
+    </div>
+    <!-- question-body -->
+    <div class="question-body">
+      <p id="questionText">
+        What is the probability that a randomly selected student is in both
+        clubs?
+      </p>
+    </div>
+
+    <!-- options -->
+    <div>
+      <ul>
+        <li>
+          <div>
+            <label id="option-1">Option 1</label>
+            <input type="radio" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label id="option-2">Option 2</label>
+            <input type="radio" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label id="option-3">Option 3</label>
+            <input type="radio" />
+          </div>
+        </li>
+        <li>
+          <div>
+            <label id="option-4">Option 4</label>
+            <input type="radio" />
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- next-button -->
+     <div>
+        <button id="nextButton">Next</button>
+     </div>
+  </body>
+</html>
